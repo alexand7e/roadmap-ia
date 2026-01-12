@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico Viés e Ética - Governo do Piauí</title>
+    <meta name="description"
+        content="Entenda os riscos de Viés (Bias) e as questões éticas no uso de Inteligência Artificial.">
+    <link rel="canonical" href="/infografico/15">
+    <link rel="icon" type="image/png" href="/assets/logo-gov.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>tailwind.config = { theme: { extend: { colors: { piGreen: '#0B6B3A', piYellow: '#F4C430', piBlue: '#0A2540', piGray: '#F2F2F2' }, fontFamily: { sans: ['"Source Sans 3"', 'sans-serif'], display: ['"Montserrat"', 'sans-serif'] }, boxShadow: { 'poster': '0 20px 50px -12px rgba(0,0,0,0.25)' } } } };</script>
+    <link rel="stylesheet" href="/src/styles/base.css">
+</head>
+
+<body class="text-piBlue">
+    <div class="infographic-paper shadow-poster w-full max-w-[1200px] bg-white">
+        <header
+            class="bg-piGray px-8 py-8 border-b-8 border-piGreen flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+            <div
+                class="absolute top-0 right-0 w-64 h-64 bg-piYellow opacity-10 rounded-full transform translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div class="flex items-center gap-4 z-10">
+                <img src="/assets/logo-gov.png" alt="Governo do Piauí" class="w-16 h-30 object-contain shrink-0">
+                <div>
+                    <h2 class="text-piGreen font-bold font-display text-sm tracking-widest uppercase">Governo do Estado
+                        do Piauí</h2>
+                    <h1 class="text-piBlue font-display font-extrabold text-3xl">Viés e Ética</h1>
+                    <span class="text-piGreen font-semibold text-lg bg-piYellow px-2 text-piBlue inline-block mt-1">O
+                        Espelho da Sociedade</span>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0 text-center md:text-right z-10 flex items-center gap-4">
+                <p class="text-sm text-gray-600 max-w-xs">Como garantir que a IA seja justa para todos?</p>
+                <button id="hc-toggle"
+                    class="ml-2 px-3 py-2 rounded-md bg-piBlue text-white text-xs font-bold shadow hover:opacity-90"
+                    aria-pressed="false" aria-label="Alternar alto contraste">Alto Contraste</button>
+            </div>
+        </header>
+        <main class="p-4 md:p-10">
+            <div class="text-center mb-12">
+                <span class="bg-piBlue text-white px-6 py-2 rounded-full font-bold uppercase text-sm tracking-wide shadow-md">
+                    <i class="fas fa-balance-scale mr-2"></i> Ética e Responsabilidade
+                </span>
+            </div>
+
+            <div class="max-w-3xl mx-auto mb-12 text-gray-700 leading-relaxed text-center">
+                <p class="mb-4 text-xl font-display text-piBlue">
+                    "A IA não tem preconceitos. Os dados que usamos para treiná-la têm."
+                </p>
+            </div>
+
+            <!-- Concept Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-piYellow hover:shadow-md transition-shadow">
+                    <div class="text-4xl text-piYellow mb-4"><i class="fas fa-globe"></i></div>
+                    <h3 class="font-display font-bold text-lg text-piBlue mb-2">Dados da Internet</h3>
+                    <p class="text-sm text-gray-600">A IA aprende lendo a internet inteira. Ela absorve o conhecimento, mas também o ódio e os estereótipos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow">
+                    <div class="text-4xl text-red-500 mb-4"><i class="fas fa-virus"></i></div>
+                    <h3 class="font-display font-bold text-lg text-piBlue mb-2">Contaminação</h3>
+                    <p class="text-sm text-gray-600">Sem filtro, a IA associa profissões de poder a homens e papéis domésticos a mulheres, por exemplo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-piGreen hover:shadow-md transition-shadow">
+                    <div class="text-4xl text-piGreen mb-4"><i class="fas fa-filter"></i></div>
+                    <h3 class="font-display font-bold text-lg text-piBlue mb-2">Filtro Humano</h3>
+                    <p class="text-sm text-gray-600">Cabe a nós (RLHF) ensinar a IA que certos padrões estatísticos são moralmente inaceitáveis.</p>
+                </div>
+            </div>
+
+            <!-- Analogy Section -->
+            <div class="bg-piGray rounded-xl p-8 border-t-4 border-piGreen relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-piGreen opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+                <h3 class="font-display font-bold text-2xl text-piGreen mb-4 flex items-center">
+                    <i class="fas fa-lightbulb mr-3"></i> A Analogia do "Papagaio da Praça"
+                </h3>
+                <p class="text-gray-700 leading-relaxed relative z-10">
+                    Imagine que a IA é um <strong>papagaio</strong> que viveu 20 anos em uma praça pública movimentada, ouvindo todo mundo falar. 
+                    Ele aprendeu palavras bonitas, poesia e ciência. Mas também ouviu xingamentos, fofocas e discursos de ódio. 
+                    <br><br>
+                    Quando você pergunta algo, ele repete o que ouviu com mais frequência. 
+                    Se não houver um "treinador" (nós) para dizer "não repita essa palavra feia", ele vai ofender alguém sem nem saber o que está dizendo.
+                </p>
+            </div>
+        </main>
+
+        <footer class="bg-piGreen text-white py-8 text-center border-t-8 border-piYellow relative">
+            <div class="container mx-auto px-4">
+                <p class="font-display font-bold text-lg italic mb-4">"Dados, inovação e inteligência para transformar o
+                    Piauí."</p>
+                <div class="flex justify-center items-center gap-2 text-sm opacity-80">
+                    <span>Governo do Estado do Piauí</span>
+                    <span>&bull;</span>
+                    <span>2026</span>
+                </div>
+                <div class="mt-6 flex justify-center">
+                <img src="/assets/capacitia-logo.png" alt="Capacitia"
+                    class="h-20 opacity-80 hover:opacity-100 transition-opacity">
+                </div>  
+            </div>
+        </footer>
+
+        <nav class="fixed bottom-6 right-6 flex items-center gap-2 z-50">
+            <a href="/infografico/14"
+                class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300"
+                aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="/roadmap"
+                class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300"
+                aria-label="Finalizar">
+                <i class="fas fa-check"></i>
+            </a>
+        </nav>
+    </div>
+    <script>
+        const btn = document.getElementById('hc-toggle');
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const active = document.body.classList.toggle('hc');
+                btn.setAttribute('aria-pressed', String(active));
+            });
+        }
+    </script>
+</body>
+
+</html>

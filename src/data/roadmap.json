@@ -4,102 +4,90 @@
       "id": 1,
       "text": "O Conceito: Explicar que \"Inteligência Artificial\" é o termo genérico. Dentro dele existe o \"Machine Learning\" (Aprendizado de Máquina) e, dentro deste, o \"Deep Learning\" (Aprendizado Profundo). Gancho Didático (Analogia): Imagine a IA como o conceito de \"Transporte\". O Machine Learning seria a categoria \"Carros\", e o Deep Learning/LLMs seriam as \"Ferraris de Fórmula 1\". Nem todo transporte é uma Ferrari, mas toda Ferrari é um transporte. Objetivo: O público deve parar de usar IA e ML como sinônimos exatos e entender a hierarquia.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/wFYAV_Wk5bc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://aws.amazon.com/pt/compare/the-difference-between-machine-learning-and-deep-learning/",
-      "quiz": {
-        "question": "Qual a melhor analogia para explicar a relação entre IA, Machine Learning e Deep Learning?",
-        "options": [
-          "São três nomes diferentes para a mesma coisa.",
-          "IA é o 'Transporte', Machine Learning são os 'Carros' e Deep Learning são as 'Ferraris'.",
-          "Machine Learning é o conceito geral, e IA é uma pequena parte dele.",
-          "Deep Learning é a tecnologia antiga, e IA é a moderna."
-        ],
-        "correctIndex": 1,
-        "feedback": "Exato! IA é o termo guarda-chuva, ML é um subconjunto, e Deep Learning é uma especialização poderosa dentro de ML."
-      }
+      "article": "/infografico/1"
     },
     {
       "id": 2,
       "text": "O Conceito: Uma linha do tempo rápida. Falar do Teste de Turing, a vitória do DeepBlue no xadrez, a era dos assistentes \"burros\" (Siri antiga) e a explosão de 2017 com o artigo do Google (\"Attention is All You Need\"). Gancho Didático: Mostrar que a IA antiga era baseada em regras rígidas (\"SE isso, ENTÃO aquilo\"), como uma receita de bolo. A IA moderna aprende a cozinhar sozinha provando a comida.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/nsZzDiR7Qt8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://www.atra.com.br/2024/10/24/a-linha-do-tempo-da-inteligencia-artificial/"
+      "article": "/infografico/2"
     },
     {
       "id": 3,
       "text": "O Conceito: Explicar que não programamos as respostas na IA. Nós damos a ela terabytes de textos (livros, internet) e ela encontra padrões sozinha. Gancho Didático (Analogia): Imagine trancar uma pessoa que não fala português numa biblioteca com todos os livros do Brasil. Se ela ficar lá por 1000 anos lendo, ela vai começar a entender que depois da palavra \"Bom\", quase sempre vem \"dia\", \"tarde\" ou \"noite\", mas nunca \"cadeira\". Isso é o treinamento.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/mWD8wWwZpi8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://blog.itaipuparquetec.org.br/redes-neurais-itaipu-parquetec/"
+      "article": "/infografico/3"
     },
     {
       "id": 4,
       "text": "O Conceito: Explicar a arquitetura \"Transformer\" (o T do ChatGPT). É a tecnologia que permite à IA entender o contexto de uma frase inteira de uma vez, e não palavra por palavra sequencialmente. Gancho Didático: Antigamente, os tradutores liam como uma criança alfabetizando: palavra por palavra. O Transformer lê como um adulto: bate o olho no parágrafo e entende que a palavra \"Banco\" na frase \"Sentei no banco\" é diferente de \"Fui ao banco sacar dinheiro\", por causa das palavras ao redor.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/Ic1dXUKVNeI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://analisemacro.com.br/inteligencia-artificial/o-que-e-e-como-funciona-a-arquitetura-transformer/"
+      "article": "/infografico/4"
     },
     {
       "id": 5,
       "text": "O Conceito: LLM (Large Language Model). Explicar que a IA na verdade é uma grande calculadora de probabilidades que tenta adivinhar a próxima palavra. Gancho Didático: A IA é o \"autocompletar\" do seu celular, só que com esteroides e que leu toda a internet. Ela não \"pensa\", ela calcula qual a palavra tem a maior chance estatística de vir a seguir.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/Q7eLTeVJamA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://pt.wikipedia.org/wiki/Papagaio_estoc%C3%A1stico"
+      "article": "/infografico/5"
     },
     {
       "id": 6,
       "text": "O Conceito: Quando se fala em modelos de 7 bilhões ou 70 bilhões de parâmetros. Parâmetros são os \"pesos\" ou conexões internas que a IA ajusta durante o aprendizado. Gancho Didático: Imagine uma mesa de som de DJ com bilhões de botões. Cada botão é um parâmetro. Durante o treinamento, a IA fica girando esses botões até que a música (a resposta) saia perfeita. Mais parâmetros = mais botões = capacidade de fazer músicas mais complexas (nuances, ironia, raciocínio lógico).",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/ko3j3ERBb9s\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://pt.linkedin.com/pulse/o-que-são-os-trilhões-de-parâmetros-dos-modelos-fundação-murer-umv8f"
+      "article": "/infografico/6"
     },
     {
       "id": 7,
       "text": "O Conceito: Explicar a configuração de \"temperatura\" (geralmente de 0 a 1). Baixa temperatura faz a IA ser repetitiva e factual. Alta temperatura a faz arriscar palavras menos prováveis. Gancho Didático: Temperatura 0: É o contador ou o advogado. Só fala o óbvio e o seguro. Temperatura 1: É o poeta ou o comediante louco. Fala coisas inusitadas, mas pode falar besteira (alucinar).",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/ecNq4hWTDFM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://pt.linkedin.com/pulse/ia-generativa-temperatura-e-suas-possibilidades-eduardo-ventanilha-vas8f"
+      "article": "/infografico/7"
     },
     {
       "id": 8,
       "text": "O Conceito: Explicar que a IA não roda no \"ar\". Ela precisa de Placas de Vídeo (GPUs) superpotentes (H100 da Nvidia) em Data Centers gigantescos que gastam muita energia e água. Gancho Didático: Comparar com a mineração de ouro. O software é a técnica de escavar, mas você precisa de máquinas pesadas (GPUs) e muito combustível (eletricidade) para fazer o trabalho pesado de processar os cálculos. Por isso a IA é cara.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/ua-CiDNNj30\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://esr.rnp.br/inteligencia-artificial/infraestrutura-de-ti-para-ia-generativa/"
+      "article": "/infografico/8"
     },
     {
       "id": 9,
       "text": "O Conceito: Depois que a IA lê a internet, ela pode ser grosseira ou preconceituosa. O RLHF é a fase onde humanos dão \"joinha\" ou \"não curti\" para as respostas, ensinando a IA a ser útil e segura. Gancho Didático (Analogia do Adestramento): A IA pré-treinada é um cachorro selvagem muito inteligente. O RLHF é a escola de adestramento onde damos \"petiscos\" quando ela se comporta bem (responde educadamente) e corrigimos quando ela tenta morder (responde com toxicidade).",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/T_X4XFwKX8k\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://www.unite.ai/pt/what-is-reinforcement-learning-from-human-feedback-rlhf/"
+      "article": "/infografico/9"
     },
     {
       "id": 10,
       "text": "O Conceito: A IA deixou de ser apenas texto. Agora ela \"vê\" (visão computacional), \"ouve\" (áudio) e \"fala\". Gancho Didático: Estamos saindo da era do \"Chat de Texto\" para a era do \"Assistente Universal\". Imagine um estagiário que não apenas escreve e-mails, mas que consegue olhar para uma planilha, assistir a um vídeo de reunião e desenhar um gráfico, tudo ao mesmo tempo.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/Te3-B3haeDI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://rocketseat.com.br/blog/artigos/post/ia-multimodal-o-que-e-como-funciona"
+      "article": "/infografico/10"
     },
     {
       "id": 11,
       "text": "O Conceito: Explicar que a IA não consulta um banco de dados de fatos (como o Google). Ela gera texto. Se ela não souber a resposta, ela inventa algo plausível estatisticamente, mas factualmente falso. Gancho Didático (Analogia): A IA é como aquele aluno da 5ª série muito articulado que não estudou para a prova. Ele escreve uma resposta linda, com gramática perfeita e cheia de confiança, mas o conteúdo é pura invenção. Ela prioriza a fluidez do texto sobre a verdade dos fatos.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/9lcrKfCCFtM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://www.cnnbrasil.com.br/tecnologia/alucinacao-entenda-por-que-e-como-chatbots-de-ia-podem-dar-respostas-erradas/"
+      "article": "/infografico/11"
     },
     {
       "id": 12,
       "text": "O Conceito: A IA tem um limite de quanto texto ela consegue \"ler\" e \"lembrar\" durante uma conversa. Se você passar desse limite, ela esquece o início do papo. Gancho Didático: Imagine que a IA é um gênio, mas que tem uma memória de peixinho dourado. O \"Contexto\" é um quadro branco na frente dela. Tudo o que você conversa é escrito lá. Quando o quadro enche, para escrever uma nova frase, ela precisa apagar a primeira frase lá do topo. Se a informação importante foi apagada, ela não sabe mais do que você está falando.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/ljmk1wsVYkE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://www.datacamp.com/pt/blog/context-window"
+      "article": "/infografico/12"
     },
     {
       "id": 13,
       "text": "O Conceito: É a técnica que resolve o problema da Alucinação e da falta de conhecimento atualizado. Em vez de confiar na memória da IA, damos a ela acesso a documentos da empresa (PDFs, banco de dados) para responder. Gancho Didático: A IA padrão (ChatGPT puro) é um médico fazendo uma prova sem consulta (só com o que lembra da faculdade). Uma IA com RAG é esse mesmo médico, mas com permissão para consultar os livros e manuais técnicos durante a prova. A resposta fica muito mais precisa e baseada nos seus dados.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/yPz8LDcAcdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://www.objective.com.br/insights/rag/"
+      "article": "/infografico/13"
     },
     {
       "id": 14,
       "text": "O Conceito: O princípio de Garbage In, Garbage Out (Lixo entra, lixo sai). Ensinar que a IA precisa de contexto, persona e instruções claras para funcionar bem. Gancho Didático: A IA é como um Gênio da Lâmpada muito literal. Se você pedir \"Quero um texto para venda\", ela fará algo genérico. Se você pedir \"Aja como um copywriter sênior, escreva um texto de venda persuasivo para mães de primeira viagem, focado em segurança...\", o resultado é ouro. Saber pedir é mais importante do que saber programar.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/ATp4Q4UD-c8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://quiker.com.br/engenharia-de-prompts-guia-completo/"
+      "article": "/infografico/14"
     },
     {
       "id": 15,
       "text": "O Conceito: Como a IA foi treinada com a internet, ela absorveu os preconceitos da internet. Ela pode replicar racismo, machismo ou visões ocidentais predominantes se não for vigiada. Gancho Didático: A IA é um papagaio que morou 20 anos numa praça pública ouvindo todo mundo falar. Ela aprendeu palavras bonitas, mas também aprendeu palavrões e preconceitos. Cabe a nós (humanos) filtrar e garantir que o papagaio não ofenda ninguém numa reunião de negócios.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/dhWFnOq0_GY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://guiadoestudante.abril.com.br/atualidades/a-inteligencia-artificial-pode-ser-racista-entenda-o-que-e-vies-algoritmico/"
-    }
-  ]
-}
+      "article": "/infografico/15"
+    ]
+  }
