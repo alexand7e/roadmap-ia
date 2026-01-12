@@ -1,11 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="CNN - Convolução com Kernel deslizando" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .imgcell { fill: #E5E7EB; stroke: #CBD5E1; }
-    .kernel { fill: rgba(244,196,48,0.3); stroke: #F4C430; stroke-width: 2; animation: slide 4s infinite alternate; }
+    .imgcell { fill: #E5E7EB; stroke: #CBD5E1; transition: fill 0.2s ease; }
+    .imgcell:hover { fill: #D1D5DB; }
+    .imgcell.highlight { fill: #F4C430; animation: highlight 0.5s ease; }
+    @keyframes highlight {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+    .kernel { fill: rgba(244,196,48,0.4); stroke: #F4C430; stroke-width: 2.5; animation: slide 3.5s infinite ease-in-out; filter: drop-shadow(0 0 4px rgba(244,196,48,0.5)); }
     @keyframes slide {
-      0% { transform: translate(0,0); }
-      50% { transform: translate(80px,40px); }
-      100% { transform: translate(160px,0); }
+      0% { transform: translate(0,0); opacity: 0.8; }
+      25% { transform: translate(80px,0); opacity: 1; }
+      50% { transform: translate(80px,40px); opacity: 1; }
+      75% { transform: translate(160px,40px); opacity: 1; }
+      100% { transform: translate(160px,0); opacity: 0.8; }
+    }
+    .kernel-border { stroke-dasharray: 5 3; animation: borderPulse 2s linear infinite; }
+    @keyframes borderPulse {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 20; }
     }
     text { font: 700 11px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
@@ -45,6 +59,7 @@
     </g>
     <!-- Kernel 3x3 -->
     <rect x="0" y="0" width="90" height="90" class="kernel"/>
+    <rect x="0" y="0" width="90" height="90" fill="none" stroke="#F4C430" stroke-width="2.5" class="kernel-border"/>
   </g>
   <text x="200" y="180" text-anchor="middle">Kernel desliza extraindo features</text>
 </svg>

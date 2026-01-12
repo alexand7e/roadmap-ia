@@ -1,14 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" role="img" aria-label="Deep Learning - Pilha de Camadas" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .layer { fill: #F2F2F2; stroke: #0A2540; stroke-width: 2; }
-    .flow { stroke: #0B6B3A; stroke-width: 3; stroke-dasharray: 10; animation: f 3s linear infinite; }
-    @keyframes f { to { stroke-dashoffset: 60; } }
+    .layer { fill: #F2F2F2; stroke: #0A2540; stroke-width: 2; transition: all 0.3s ease; }
+    .layer:hover { fill: #E5E7EB; stroke-width: 3; transform: translateX(5px); }
+    .layer.active { fill: #F4C430; animation: layerPulse 2.5s infinite ease-in-out; }
+    @keyframes layerPulse {
+      0%, 100% { transform: scaleY(1); opacity: 0.9; }
+      50% { transform: scaleY(1.1); opacity: 1; }
+    }
+    .flow { stroke: #0B6B3A; stroke-width: 3; stroke-dasharray: 12 6; animation: f 2.5s linear infinite; opacity: 0.8; }
+    @keyframes f { 
+      0% { stroke-dashoffset: 0; opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 60; opacity: 0.6; }
+    }
+    .arrow { fill: #0B6B3A; animation: arrowPulse 2s infinite ease-in-out; }
+    @keyframes arrowPulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
     text { font: 700 11px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
   <rect x="40" y="20" width="280" height="20" rx="6" class="layer"/>
-  <rect x="40" y="50" width="280" height="20" rx="6" class="layer"/>
+  <rect x="40" y="50" width="280" height="20" rx="6" class="layer active"/>
   <rect x="40" y="80" width="280" height="20" rx="6" class="layer"/>
   <rect x="40" y="110" width="280" height="20" rx="6" class="layer"/>
   <text x="180" y="145" text-anchor="middle">Extração Hierárquica de Features</text>
   <path d="M60,130 C120,90 240,90 300,130" class="flow"/>
+  <polygon points="295,125 300,130 295,135" class="arrow"/>
 </svg>

@@ -5,7 +5,7 @@ const compression = require('compression');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const BASE_URL = process.env.BASE_URL || 'https://example.com';
+const BASE_URL = process.env.BASE_URL || 'https://sua-url.vercel.app';
 
 // Simple in-memory cache for HTML pages (LRU-like with max size)
 const cache = new Map();

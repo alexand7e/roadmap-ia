@@ -1,26 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="RNN vs LSTM vs Transformer" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .box { fill: #F2F2F2; stroke: #0A2540; stroke-width: 2; }
-    .arrow { stroke: #0B6B3A; stroke-width: 2; marker-end: url(#m); }
-    .dash { stroke: #F4C430; stroke-width: 2; stroke-dasharray: 6; animation: run 2.5s linear infinite; }
-    @keyframes run { to { stroke-dashoffset: 36; } }
+    .box { fill: #F2F2F2; stroke: #0A2540; stroke-width: 2; transition: all 0.3s ease; }
+    .box:hover { fill: #E5E7EB; stroke-width: 3; transform: scale(1.05); }
+    .arrow { stroke: #0B6B3A; stroke-width: 2.5; marker-end: url(#m); opacity: 0.7; }
+    .dash { stroke: #F4C430; stroke-width: 2.5; stroke-dasharray: 8 4; animation: run 2s linear infinite; opacity: 0.8; }
+    @keyframes run { 
+      0% { stroke-dashoffset: 0; opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 36; opacity: 0.6; }
+    }
+    .dash-fast { animation: runFast 1.5s linear infinite; }
+    @keyframes runFast {
+      0% { stroke-dashoffset: 0; opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 36; opacity: 0.7; }
+    }
+    .pulse { animation: pulse 2s infinite ease-in-out; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+    .glow { animation: glow 2.5s ease-in-out infinite; }
+    @keyframes glow {
+      0%, 100% { filter: drop-shadow(0 0 2px rgba(11,107,58,0.3)); }
+      50% { filter: drop-shadow(0 0 6px rgba(11,107,58,0.6)); }
+    }
     text { font: 700 10px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
   <defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0B6B3A"/></marker></defs>
   <!-- RNN -->
   <text x="60" y="20" text-anchor="middle">RNN</text>
-  <rect x="20" y="30" width="30" height="20" class="box"/><rect x="60" y="30" width="30" height="20" class="box"/><rect x="100" y="30" width="30" height="20" class="box"/>
-  <path d="M50,50 H60" class="arrow"/><path d="M90,50 H100" class="arrow"/>
+  <rect x="20" y="30" width="30" height="20" class="box"/>
+  <rect x="60" y="30" width="30" height="20" class="box pulse"/>
+  <rect x="100" y="30" width="30" height="20" class="box"/>
+  <path d="M50,50 H60" class="arrow"/>
+  <path d="M90,50 H100" class="arrow"/>
   <path d="M60,30 C40,10 30,60 60,50" class="dash"/>
   <!-- LSTM -->
   <text x="60" y="90" text-anchor="middle">LSTM</text>
-  <rect x="20" y="100" width="30" height="20" class="box"/><rect x="60" y="100" width="30" height="20" class="box"/><rect x="100" y="100" width="30" height="20" class="box"/>
-  <path d="M50,120 H60" class="arrow"/><path d="M90,120 H100" class="arrow"/>
+  <rect x="20" y="100" width="30" height="20" class="box"/>
+  <rect x="60" y="100" width="30" height="20" class="box pulse"/>
+  <rect x="100" y="100" width="30" height="20" class="box"/>
+  <path d="M50,120 H60" class="arrow"/>
+  <path d="M90,120 H100" class="arrow"/>
   <path d="M60,100 C40,80 30,130 60,120" class="dash"/>
-  <path d="M60,90 C80,70 110,140 60,120" class="dash"/>
+  <path d="M60,90 C80,70 110,140 60,120" class="dash dash-fast"/>
   <!-- Transformer -->
   <text x="260" y="20" text-anchor="middle">Transformer</text>
-  <rect x="200" y="30" width="120" height="60" rx="8" class="box"/>
+  <rect x="200" y="30" width="120" height="60" rx="8" class="box glow"/>
   <text x="260" y="60" text-anchor="middle">Self-Attention</text>
-  <path d="M180,60 H200" class="arrow"/><path d="M320,60 H340" class="arrow"/>
+  <path d="M180,60 H200" class="arrow"/>
+  <path d="M320,60 H340" class="arrow"/>
 </svg>

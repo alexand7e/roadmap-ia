@@ -4,7 +4,18 @@
       "id": 1,
       "text": "O Conceito: Explicar que \"Inteligência Artificial\" é o termo genérico. Dentro dele existe o \"Machine Learning\" (Aprendizado de Máquina) e, dentro deste, o \"Deep Learning\" (Aprendizado Profundo). Gancho Didático (Analogia): Imagine a IA como o conceito de \"Transporte\". O Machine Learning seria a categoria \"Carros\", e o Deep Learning/LLMs seriam as \"Ferraris de Fórmula 1\". Nem todo transporte é uma Ferrari, mas toda Ferrari é um transporte. Objetivo: O público deve parar de usar IA e ML como sinônimos exatos e entender a hierarquia.",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/wFYAV_Wk5bc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "article": "https://aws.amazon.com/pt/compare/the-difference-between-machine-learning-and-deep-learning/"
+      "article": "https://aws.amazon.com/pt/compare/the-difference-between-machine-learning-and-deep-learning/",
+      "quiz": {
+        "question": "Qual a melhor analogia para explicar a relação entre IA, Machine Learning e Deep Learning?",
+        "options": [
+          "São três nomes diferentes para a mesma coisa.",
+          "IA é o 'Transporte', Machine Learning são os 'Carros' e Deep Learning são as 'Ferraris'.",
+          "Machine Learning é o conceito geral, e IA é uma pequena parte dele.",
+          "Deep Learning é a tecnologia antiga, e IA é a moderna."
+        ],
+        "correctIndex": 1,
+        "feedback": "Exato! IA é o termo guarda-chuva, ML é um subconjunto, e Deep Learning é uma especialização poderosa dentro de ML."
+      }
     },
     {
       "id": 2,

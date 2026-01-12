@@ -1,12 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="Rede Neural - Entrada, Oculta e Saída" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .line { stroke: #CBD5E1; stroke-width: 2; stroke-dasharray: 10; animation: flow 2.5s linear infinite; }
-    @keyframes flow { to { stroke-dashoffset: 40; } }
-    .n1 { fill: #0A2540; }
-    .n2 { fill: #F4C430; stroke: #0A2540; stroke-width: 2; }
-    .n3 { fill: #0B6B3A; }
-    .pulse { animation: pulse 2s infinite; }
-    @keyframes pulse { 0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)} }
+    .line { stroke: #CBD5E1; stroke-width: 2; stroke-dasharray: 8 4; animation: flow 2s linear infinite; opacity: 0.6; }
+    @keyframes flow { 
+      0% { stroke-dashoffset: 0; opacity: 0.4; }
+      50% { opacity: 0.8; }
+      100% { stroke-dashoffset: 40; opacity: 0.4; }
+    }
+    .line.active { stroke: #0B6B3A; stroke-width: 2.5; opacity: 0.9; animation: flowActive 1.5s linear infinite; }
+    @keyframes flowActive {
+      0% { stroke-dashoffset: 0; opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 40; opacity: 0.7; }
+    }
+    .n1 { fill: #0A2540; transition: all 0.3s ease; }
+    .n1:hover { fill: #0B6B3A; transform: scale(1.1); }
+    .n2 { fill: #F4C430; stroke: #0A2540; stroke-width: 2; transition: all 0.3s ease; }
+    .n2:hover { fill: #F4C430; filter: brightness(1.2); transform: scale(1.15); }
+    .n3 { fill: #0B6B3A; transition: all 0.3s ease; }
+    .n3:hover { fill: #0A2540; transform: scale(1.1); }
+    .pulse { animation: pulse 2s infinite ease-in-out; }
+    @keyframes pulse { 
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 3px rgba(244,196,48,0.5)); }
+      50% { transform: scale(1.1); filter: drop-shadow(0 0 8px rgba(244,196,48,0.8)); }
+    }
+    .glow { animation: glow 2.5s ease-in-out infinite; }
+    @keyframes glow {
+      0%, 100% { filter: drop-shadow(0 0 2px rgba(11,107,58,0.3)); }
+      50% { filter: drop-shadow(0 0 6px rgba(11,107,58,0.6)); }
+    }
     text { font: 700 10px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
   <!-- Input neurons -->
@@ -20,24 +41,24 @@
   <circle cx="180" cy="170" r="14" class="n2 pulse"/>
   <text x="180" y="200" text-anchor="middle">OCULTA</text>
   <!-- Output neurons -->
-  <circle cx="320" cy="90" r="16" class="n3"/>
+  <circle cx="320" cy="90" r="16" class="n3 glow"/>
   <circle cx="320" cy="140" r="16" class="n3"/>
   <text x="320" y="200" text-anchor="middle">SAÍDA</text>
   <!-- connections -->
-  <line x1="52" y1="60" x2="166" y2="50" class="line"/>
+  <line x1="52" y1="60" x2="166" y2="50" class="line active"/>
   <line x1="52" y1="60" x2="166" y2="110" class="line"/>
-  <line x1="52" y1="60" x2="166" y2="170" class="line"/>
+  <line x1="52" y1="60" x2="166" y2="170" class="line active"/>
   <line x1="52" y1="110" x2="166" y2="50" class="line"/>
-  <line x1="52" y1="110" x2="166" y2="110" class="line"/>
+  <line x1="52" y1="110" x2="166" y2="110" class="line active"/>
   <line x1="52" y1="110" x2="166" y2="170" class="line"/>
   <line x1="52" y1="160" x2="166" y2="50" class="line"/>
   <line x1="52" y1="160" x2="166" y2="110" class="line"/>
-  <line x1="52" y1="160" x2="166" y2="170" class="line"/>
+  <line x1="52" y1="160" x2="166" y2="170" class="line active"/>
   <!-- hidden to output -->
-  <line x1="194" y1="50" x2="304" y2="90" class="line"/>
+  <line x1="194" y1="50" x2="304" y2="90" class="line active"/>
   <line x1="194" y1="50" x2="304" y2="140" class="line"/>
   <line x1="194" y1="110" x2="304" y2="90" class="line"/>
-  <line x1="194" y1="110" x2="304" y2="140" class="line"/>
+  <line x1="194" y1="110" x2="304" y2="140" class="line active"/>
   <line x1="194" y1="170" x2="304" y2="90" class="line"/>
-  <line x1="194" y1="170" x2="304" y2="140" class="line"/>
+  <line x1="194" y1="170" x2="304" y2="140" class="line active"/>
 </svg>

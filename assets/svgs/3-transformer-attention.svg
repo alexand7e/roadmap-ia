@@ -1,15 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Transformer - Self-Attention" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .cell { fill: #E5E7EB; }
+    .cell { fill: #E5E7EB; transition: fill 0.4s ease; }
     .cell.h { fill: #F4C430; }
     .grid { stroke: #CBD5E1; stroke-width: 1; }
-    .anim { animation: highlight 3s infinite; }
+    .anim { animation: highlight 4s infinite ease-in-out; }
     @keyframes highlight {
-      0% { fill: #E5E7EB; }
-      25% { fill: #F4C430; }
-      50% { fill: #E5E7EB; }
-      75% { fill: #0B6B3A; }
-      100% { fill: #E5E7EB; }
+      0%, 100% { fill: #E5E7EB; transform: scale(1); }
+      12.5% { fill: #F4C430; transform: scale(1.05); }
+      25% { fill: #0B6B3A; transform: scale(1.08); }
+      37.5% { fill: #F4C430; transform: scale(1.05); }
+      50% { fill: #E5E7EB; transform: scale(1); }
+    }
+    .anim-delay-1 { animation-delay: 0.5s; }
+    .anim-delay-2 { animation-delay: 1s; }
+    .anim-delay-3 { animation-delay: 1.5s; }
+    .anim-delay-4 { animation-delay: 2s; }
+    .anim-delay-5 { animation-delay: 2.5s; }
+    .wave { animation: wave 3s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.8; }
     }
     text { font: 700 10px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
@@ -22,49 +32,48 @@
     <!-- Draw cells -->
     <g>
       <!-- 6x6 cells -->
-      <!-- Row loop simulated manually -->
       <rect x="0" y="0" width="50" height="20" class="cell anim"/>
-      <rect x="50" y="0" width="50" height="20" class="cell"/>
-      <rect x="100" y="0" width="50" height="20" class="cell"/>
-      <rect x="150" y="0" width="50" height="20" class="cell"/>
-      <rect x="200" y="0" width="50" height="20" class="cell"/>
-      <rect x="250" y="0" width="50" height="20" class="cell"/>
+      <rect x="50" y="0" width="50" height="20" class="cell anim anim-delay-1"/>
+      <rect x="100" y="0" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="150" y="0" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="200" y="0" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="250" y="0" width="50" height="20" class="cell anim anim-delay-5"/>
 
-      <rect x="0" y="20" width="50" height="20" class="cell"/>
+      <rect x="0" y="20" width="50" height="20" class="cell anim anim-delay-1"/>
       <rect x="50" y="20" width="50" height="20" class="cell anim"/>
-      <rect x="100" y="20" width="50" height="20" class="cell"/>
-      <rect x="150" y="20" width="50" height="20" class="cell"/>
-      <rect x="200" y="20" width="50" height="20" class="cell"/>
-      <rect x="250" y="20" width="50" height="20" class="cell"/>
+      <rect x="100" y="20" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="150" y="20" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="200" y="20" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="250" y="20" width="50" height="20" class="cell anim anim-delay-5"/>
 
-      <rect x="0" y="40" width="50" height="20" class="cell"/>
-      <rect x="50" y="40" width="50" height="20" class="cell"/>
+      <rect x="0" y="40" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="50" y="40" width="50" height="20" class="cell anim anim-delay-1"/>
       <rect x="100" y="40" width="50" height="20" class="cell anim"/>
-      <rect x="150" y="40" width="50" height="20" class="cell"/>
-      <rect x="200" y="40" width="50" height="20" class="cell"/>
-      <rect x="250" y="40" width="50" height="20" class="cell"/>
+      <rect x="150" y="40" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="200" y="40" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="250" y="40" width="50" height="20" class="cell anim anim-delay-5"/>
 
-      <rect x="0" y="60" width="50" height="20" class="cell"/>
-      <rect x="50" y="60" width="50" height="20" class="cell"/>
-      <rect x="100" y="60" width="50" height="20" class="cell"/>
+      <rect x="0" y="60" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="50" y="60" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="100" y="60" width="50" height="20" class="cell anim anim-delay-1"/>
       <rect x="150" y="60" width="50" height="20" class="cell anim"/>
-      <rect x="200" y="60" width="50" height="20" class="cell"/>
-      <rect x="250" y="60" width="50" height="20" class="cell"/>
+      <rect x="200" y="60" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="250" y="60" width="50" height="20" class="cell anim anim-delay-5"/>
 
-      <rect x="0" y="80" width="50" height="20" class="cell"/>
-      <rect x="50" y="80" width="50" height="20" class="cell"/>
-      <rect x="100" y="80" width="50" height="20" class="cell"/>
-      <rect x="150" y="80" width="50" height="20" class="cell"/>
+      <rect x="0" y="80" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="50" y="80" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="100" y="80" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="150" y="80" width="50" height="20" class="cell anim anim-delay-1"/>
       <rect x="200" y="80" width="50" height="20" class="cell anim"/>
-      <rect x="250" y="80" width="50" height="20" class="cell"/>
+      <rect x="250" y="80" width="50" height="20" class="cell anim anim-delay-5"/>
 
-      <rect x="0" y="100" width="50" height="20" class="cell"/>
-      <rect x="50" y="100" width="50" height="20" class="cell"/>
-      <rect x="100" y="100" width="50" height="20" class="cell"/>
-      <rect x="150" y="100" width="50" height="20" class="cell"/>
-      <rect x="200" y="100" width="50" height="20" class="cell"/>
+      <rect x="0" y="100" width="50" height="20" class="cell anim anim-delay-5"/>
+      <rect x="50" y="100" width="50" height="20" class="cell anim anim-delay-4"/>
+      <rect x="100" y="100" width="50" height="20" class="cell anim anim-delay-3"/>
+      <rect x="150" y="100" width="50" height="20" class="cell anim anim-delay-2"/>
+      <rect x="200" y="100" width="50" height="20" class="cell anim anim-delay-1"/>
       <rect x="250" y="100" width="50" height="20" class="cell anim"/>
     </g>
   </g>
-  <text x="180" y="170" text-anchor="middle">Matriz de Atenção (Self-Attention)</text>
+  <text x="180" y="170" text-anchor="middle" class="wave">Matriz de Atenção (Self-Attention)</text>
 </svg>

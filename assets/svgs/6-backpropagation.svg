@@ -1,21 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" role="img" aria-label="Backpropagation - Erro voltando" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .forward { stroke: #0B6B3A; stroke-width: 3; marker-end: url(#mf); }
-    .back { stroke: #F43F5E; stroke-width: 3; marker-end: url(#mb); stroke-dasharray: 8; animation: b 2.5s linear infinite; }
-    @keyframes b { to { stroke-dashoffset: 48; } }
-    .node { fill: #F4C430; stroke: #0A2540; stroke-width: 2; }
+    .forward { stroke: #0B6B3A; stroke-width: 3; marker-end: url(#mf); opacity: 0.7; }
+    .back { stroke: #F43F5E; stroke-width: 3.5; marker-end: url(#mb); stroke-dasharray: 10 5; animation: b 2s linear infinite; opacity: 0.9; }
+    @keyframes b { 
+      0% { stroke-dashoffset: 0; opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 48; opacity: 0.7; }
+    }
+    .node { fill: #F4C430; stroke: #0A2540; stroke-width: 2; transition: all 0.3s ease; }
+    .node:hover { transform: scale(1.15); filter: brightness(1.2); }
+    .node.active { animation: nodePulse 2s infinite ease-in-out; }
+    @keyframes nodePulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 3px rgba(244,196,48,0.5)); }
+      50% { transform: scale(1.1); filter: drop-shadow(0 0 8px rgba(244,196,48,0.8)); }
+    }
+    .glow { animation: glow 2.5s ease-in-out infinite; }
+    @keyframes glow {
+      0%, 100% { filter: drop-shadow(0 0 2px rgba(244,61,94,0.3)); }
+      50% { filter: drop-shadow(0 0 6px rgba(244,61,94,0.6)); }
+    }
     text { font: 700 11px Montserrat, Arial, sans-serif; fill: #0A2540; }
   </style>
   <defs>
     <marker id="mf" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0B6B3A"/></marker>
     <marker id="mb" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#F43F5E"/></marker>
   </defs>
-  <circle cx="60" cy="80" r="14" class="node"/><text x="60" y="115" text-anchor="middle">In</text>
-  <circle cx="180" cy="80" r="14" class="node"/><text x="180" y="115" text-anchor="middle">Hidden</text>
-  <circle cx="300" cy="80" r="14" class="node"/><text x="300" y="115" text-anchor="middle">Out</text>
+  <circle cx="60" cy="80" r="14" class="node"/>
+  <text x="60" y="115" text-anchor="middle">In</text>
+  <circle cx="180" cy="80" r="14" class="node active"/>
+  <text x="180" y="115" text-anchor="middle">Hidden</text>
+  <circle cx="300" cy="80" r="14" class="node"/>
+  <text x="300" y="115" text-anchor="middle">Out</text>
   <path d="M74,80 H166" class="forward"/>
   <path d="M194,80 H286" class="forward"/>
-  <path d="M286,95 H194" class="back"/>
-  <path d="M166,95 H74" class="back"/>
+  <path d="M286,95 H194" class="back glow"/>
+  <path d="M166,95 H74" class="back glow"/>
   <text x="180" y="20" text-anchor="middle">Erro retorna e ajusta pesos</text>
 </svg>

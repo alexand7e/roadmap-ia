@@ -1,14 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="LLM - Sequência de Tokens" preserveAspectRatio="xMidYMid meet" width="100%" height="auto">
   <style>
-    .tok { fill: #0A2540; }
-    .tok.active { fill: #F4C430; }
-    .dash { stroke: #0B6B3A; stroke-width: 2; stroke-dasharray: 6; animation: run 2s linear infinite; }
-    @keyframes run { to { stroke-dashoffset: 36; } }
+    .tok { fill: #0A2540; transition: all 0.4s ease; }
+    .tok:hover { transform: translateY(-3px); filter: brightness(1.2); }
+    .tok.active { fill: #F4C430; animation: active 2s infinite ease-in-out; }
+    @keyframes active {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(244,196,48,0.6)); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 8px rgba(244,196,48,0.9)); }
+    }
+    .tok.next { fill: #0B6B3A; animation: next 1.5s infinite ease-in-out; }
+    @keyframes next {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    .dash { stroke: #0B6B3A; stroke-width: 2.5; stroke-dasharray: 8 4; animation: run 2s linear infinite; }
+    @keyframes run { 
+      0% { stroke-dashoffset: 0; opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 36; opacity: 0.6; }
+    }
+    .pulse-dot { fill: #F4C430; animation: pulseDot 1.5s infinite ease-in-out; }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
     text { font: 700 11px Montserrat, Arial, sans-serif; fill: #ffffff; }
   </style>
   <rect x="20" y="30" width="60" height="30" rx="6" class="tok active"/>
   <text x="50" y="50" text-anchor="middle">O</text>
-  <rect x="90" y="30" width="60" height="30" rx="6" class="tok"/>
+  <rect x="90" y="30" width="60" height="30" rx="6" class="tok next"/>
   <text x="120" y="50" text-anchor="middle">cérebro</text>
   <rect x="160" y="30" width="60" height="30" rx="6" class="tok"/>
   <text x="190" y="50" text-anchor="middle">humano</text>
@@ -17,4 +36,5 @@
   <rect x="300" y="30" width="60" height="30" rx="6" class="tok"/>
   <text x="330" y="50" text-anchor="middle">incrível</text>
   <path d="M50,75 H330" class="dash"/>
+  <circle cx="120" cy="75" r="3" class="pulse-dot"/>
 </svg>
