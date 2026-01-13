@@ -60,6 +60,15 @@ app.get('/roadmap', (req, res) => {
   return res.redirect('/');
 });
 
+app.get(['/ferramentas', '/tools'], (req, res) => {
+  const tools = path.join(__dirname, 'src', 'pages', 'tools.html');
+  if (fs.existsSync(tools)) {
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    return res.sendFile(tools);
+  }
+  return res.redirect('/');
+});
+
 app.get('/infografico/:id', (req, res) => {
   const id = req.params.id;
   if (!/^\d+$/.test(id)) {

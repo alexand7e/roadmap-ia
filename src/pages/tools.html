@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramentas de IA — Governo do Piauí</title>
+  <meta name="description" content="Catálogo de ferramentas de IA com vídeos e links oficiais para estudo e prática.">
+  <meta name="keywords" content="IA, ferramentas de IA, ChatGPT, Gemini, Perplexity, NotebookLM, DeepSeek, ElevenLabs, Suno">
+  <meta property="og:title" content="Ferramentas de IA — Catálogo">
+  <meta property="og:description" content="Explore ferramentas de IA com vídeos incorporados e acesso rápido.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/ferramentas">
+  <link rel="icon" type="image/png" href="/assets/logo-gov.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { piGreen:'#0B6B3A', piYellow:'#F4C430', piBlue:'#0A2540', piGray:'#F2F2F2' },
+      fontFamily: { sans:['"Source Sans 3"','sans-serif'], display:['"Montserrat"','sans-serif'] },
+      boxShadow: { 'poster':'0 20px 50px -12px rgba(0,0,0,0.25)' }
+    } } }
+  </script>
+  <link rel="stylesheet" href="/src/styles/base.css">
+  <script src="/src/js/tools.js" defer></script>
+</head>
+<body class="text-piBlue font-sans">
+  <div class="container-page shadow-poster rounded-2xl overflow-hidden my-4 mx-4">
+    <header class="bg-piGray px-8 py-8 border-b-8 border-piGreen flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-piYellow opacity-10 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+      <div class="flex items-center gap-4 z-10">
+        <a href="/" aria-label="Ir para a página inicial">
+          <img src="/assets/logo-gov.png" alt="Governo do Piauí" class="w-16 h-30 object-contain shrink-0">
+        </a>
+        <div>
+          <h2 class="text-piGreen font-bold font-display text-sm tracking-widest uppercase">Governo do Estado do Piauí</h2>
+          <h1 class="text-piBlue font-display font-extrabold text-2xl md:text-3xl">Ferramentas de IA</h1>
+          <span class="text-piGreen font-semibold text-base md:text-lg bg-piYellow px-2 text-piBlue inline-block mt-1 rounded">Catálogo com vídeos e acesso rápido</span>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right z-10 flex flex-col md:flex-row items-center gap-4">
+        <div id="tools-status" class="status-pill invalid hidden">Carregando...</div>
+        <button id="hc-toggle" class="px-4 py-2 rounded-md bg-piBlue text-white text-sm font-bold shadow hover:opacity-90 transition-opacity" aria-pressed="false" aria-label="Alternar alto contraste">
+          <i class="fas fa-adjust mr-2"></i>Alto Contraste
+        </button>
+      </div>
+    </header>
+
+    <main class="p-6 md:p-10 flex-grow bg-gray-50">
+      <div class="text-center mb-10">
+        <span class="bg-piBlue text-white px-6 py-2 rounded-full font-bold uppercase text-sm tracking-wide shadow-md inline-flex items-center">
+          <i class="fas fa-wand-magic-sparkles mr-2"></i> Ferramentas recomendadas
+        </span>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <div id="tools-grid" class="space-y-6"></div>
+      </div>
+    </main>
+
+    <footer class="bg-piGreen text-white py-8 text-center border-t-8 border-piYellow relative">
+      <div class="container mx-auto px-4">
+        <p class="font-display font-bold text-lg italic mb-4">“Dados, inovação e inteligência para transformar o Piauí.”</p>
+        <div class="flex justify-center items-center gap-2 text-sm opacity-80">
+          <span>Governo do Estado do Piauí</span>
+          <span>&bull;</span>
+          <span>2026</span>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <img src="/assets/capacitia-logo.png" alt="Capacitia" class="h-20 opacity-80 hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+    </footer>
+
+    <nav class="fixed bottom-6 right-6 flex items-center gap-2 z-50">
+      <a href="/roadmap" class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300" aria-label="Roadmap">
+        <i class="fas fa-map"></i>
+      </a>
+      <a href="/" class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300" aria-label="Início">
+        <i class="fas fa-house"></i>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
+

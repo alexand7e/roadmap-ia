@@ -1,0 +1,158 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "ChatGPT",
+      "description": "Modelo de linguagem conversacional avançado da OpenAI, capaz de geração de texto, análise e raciocínio complexo.",
+      "url": "https://chatgpt.com",
+      "video": {
+        "title": "Como Usar ChatGPT IA Para Iniciantes (Tutorial Passo a Passo 2025)",
+        "duration": "00:17:14",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=Ua95v93VQzM",
+        "embed_url": "https://www.youtube.com/embed/Ua95v93VQzM"
+      }
+    },
+    {
+      "id": 2,
+      "name": "NotebookLM",
+      "description": "Ferramenta do Google focada em pesquisa e aprendizado (RAG), permitindo interagir com documentos enviados e gerar 'podcasts' de áudio.",
+      "url": "https://notebooklm.google.com",
+      "video": {
+        "title": "Use Essa IA do Google Para Aprender ou Ensinar com VÍDEOS! | NotebookLM Tutorial Completo 2025",
+        "duration": "00:10:00 (aprox., vídeo ligeiramente acima de 10 min)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=lEo7hlaqHgY",
+        "embed_url": "https://www.youtube.com/embed/lEo7hlaqHgY"
+      }
+    },
+    {
+      "id": 3,
+      "name": "ChatGLM 4.7",
+      "description": "Modelo de linguagem desenvolvido pela Zhipu AI, otimizado para bilinguismo (chinês/inglês) e raciocínio lógico.",
+      "url": "https://chatglm.cn",
+      "video": {
+        "title": "GLM 4.7: A nova IA chinesa que me tirou das férias",
+        "duration": "00:08:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=0OCpJUxMp2o",
+        "embed_url": "https://www.youtube.com/embed/0OCpJUxMp2o"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Google AI Studio",
+      "description": "Ambiente de desenvolvimento rápido para prototipagem e engenharia de prompt utilizando a família de modelos Gemini.",
+      "url": "https://aistudio.google.com",
+      "video": {
+        "title": "Google AI Studio: Aprenda QUALQUER COISA com essa IA (com Stream Realtime)",
+        "duration": "00:09:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=AytltZEEAZs",
+        "embed_url": "https://www.youtube.com/embed/AytltZEEAZs"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Gamma App",
+      "description": "Plataforma de IA generativa especializada na criação automática de slides, apresentações e documentos visuais.",
+      "url": "https://gamma.app",
+      "video": {
+        "title": "Como criar Slides com Inteligência Artificial no Gamma (passo a passo)",
+        "duration": "00:10:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=rz1WkNo_E5s",
+        "embed_url": "https://www.youtube.com/embed/rz1WkNo_E5s"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Gemini (Ecossistema)",
+      "description": "Suíte de modelos multimodais do Google. Inclui: Nano (on-device), Veo3 (geração de vídeo) e Banana (referência específica do curso).",
+      "url": "https://gemini.google.com",
+      "video": {
+        "title": "Aprenda a usar o Gemini em 15 minutos (Google IA)",
+        "duration": "00:15:49",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=-GeGPzgeHY4",
+        "embed_url": "https://www.youtube.com/embed/-GeGPzgeHY4"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Comet",
+      "description": "Ferramenta acessível via navegador, focada em rastreamento de experimentos de ML (Comet ML) ou navegação assistida por IA.",
+      "url": "https://www.comet.com",
+      "video": {
+        "title": "Navegador Comet IA: DICAS e FUNÇÕES em 15 Minutos!",
+        "duration": "00:15:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=-JyxKvaW660",
+        "embed_url": "https://www.youtube.com/embed/-JyxKvaW660"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Perplexity",
+      "description": "Motor de resposta conversacional que combina busca na web em tempo real com síntese de IA e citação de fontes.",
+      "url": "https://www.perplexity.ai",
+      "video": {
+        "title": "Como Usar Perplexity AI | Tutorial Perplexity AI Completo",
+        "duration": "00:10:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=G9_6xTbfdR4",
+        "embed_url": "https://www.youtube.com/embed/G9_6xTbfdR4"
+      }
+    },
+    {
+      "id": 9,
+      "name": "DeepSeek",
+      "description": "Modelo de IA chinês de código aberto, com forte desempenho em tarefas de programação (coding) e chat geral.",
+      "url": "https://chat.deepseek.com",
+      "video": {
+        "title": "DeepSeek: a IA que está revolucionando a programação (tutorial prático)",
+        "duration": "00:10:00 (aprox., vídeo em pt-BR explicando o uso para código)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=jaLLs_4qEus",
+        "embed_url": "https://www.youtube.com/embed/jaLLs_4qEus"
+      }
+    },
+    {
+      "id": 10,
+      "name": "ElevenLabs",
+      "description": "Líder em tecnologia de voz por IA, especializada em síntese de voz realista, clonagem de voz e dublagem.",
+      "url": "https://elevenlabs.io",
+      "video": {
+        "title": "Como Usar o ELEVENLABS Totalmente GRÁTIS [Passo a Passo Atualizado 2025]",
+        "duration": "00:09:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=jaLLs_4qEus",
+        "embed_url": "https://www.youtube.com/embed/jaLLs_4qEus"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Suno AI",
+      "description": "Plataforma de IA generativa para criação de música, permitindo gerar canções completas com letra e melodia a partir de prompts.",
+      "url": "https://suno.com",
+      "video": {
+        "title": "Como criar MÚSICAS com IA usando o SUNO (passo a passo em português)",
+        "duration": "00:10:00 (aprox.)",
+        "language": "pt-BR",
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=rMAuULKLbfQ",
+        "embed_url": "https://www.youtube.com/embed/rMAuULKLbfQ"
+      }
+    }
+  ]
+}
