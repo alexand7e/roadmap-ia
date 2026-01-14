@@ -107,6 +107,54 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Infográfico 11: Alucinação em IA -->
+  <url>
+    <loc>https://example.com/infografico/11</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Infográfico 12: Janela de Contexto -->
+  <url>
+    <loc>https://example.com/infografico/12</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Infográfico 13: RAG -->
+  <url>
+    <loc>https://example.com/infografico/13</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Infográfico 14: Prompt Engineering -->
+  <url>
+    <loc>https://example.com/infografico/14</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Infográfico 15: Viés e Ética -->
+  <url>
+    <loc>https://example.com/infografico/15</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Infográfico 16: Panorama Regulatório de IA no Brasil -->
+  <url>
+    <loc>https://example.com/infografico/16</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
 </urlset>
 

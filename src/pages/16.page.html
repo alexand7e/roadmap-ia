@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infográfico — Panorama Regulatório de IA no Brasil | Governo do Piauí</title>
+  <meta name="description" content="Panorama regulatório de IA no Brasil: EBIA, princípios éticos, autoavaliação, UNESCO e PL 2338/23.">
+  <meta name="keywords" content="IA, regulação, ética, EBIA, PL 2338/23, UNESCO, governança, direitos humanos, Brasil">
+  <meta property="og:title" content="Infográfico: Panorama Regulatório de IA no Brasil">
+  <meta property="og:description" content="Marcos e princípios para uso responsável de IA no Brasil.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/infografico/16">
+  <link rel="icon" type="image/png" href="/assets/logo-gov.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { piGreen:'#0B6B3A', piYellow:'#F4C430', piBlue:'#0A2540', piGray:'#F2F2F2' },
+      fontFamily: { sans:['"Source Sans 3"','sans-serif'], display:['"Montserrat"','sans-serif'] },
+      boxShadow: { 'poster':'0 20px 50px -12px rgba(0,0,0,0.25)' }
+    } } }
+  </script>
+  <link rel="stylesheet" href="/src/styles/base.css">
+</head>
+<body class="text-piBlue">
+  <div class="infographic-paper shadow-poster w-full max-w-[1200px] bg-white">
+    <header class="bg-piGray px-8 py-8 border-b-8 border-piGreen flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-piYellow opacity-10 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+      <div class="flex items-center gap-4 z-10">
+        <a href="/" aria-label="Ir para a página inicial">
+          <img src="/assets/logo-gov.png" alt="Governo do Piauí" class="w-16 h-30 object-contain shrink-0">
+        </a>
+        <div>
+          <h2 class="text-piGreen font-bold font-display text-sm tracking-widest uppercase">Governo do Estado do Piauí</h2>
+          <h1 class="text-piBlue font-display font-extrabold text-2xl md:text-3xl">Panorama Regulatório de IA no Brasil</h1>
+          <span class="text-piGreen font-semibold text-base md:text-lg bg-piYellow px-2 text-piBlue inline-block mt-1 rounded">Ética, governança e marcos legais</span>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right z-10 flex items-center gap-4">
+        <p class="text-sm text-gray-600 max-w-xs">Como o Brasil organiza princípios, políticas e normas para IA.</p>
+        <button id="hc-toggle" class="ml-2 px-3 py-2 rounded-md bg-piBlue text-white text-xs font-bold shadow hover:opacity-90" aria-pressed="false" aria-label="Alternar alto contraste">Alto Contraste</button>
+      </div>
+    </header>
+
+    <main class="p-4 md:p-10">
+      <div class="text-center mb-10">
+        <span class="bg-piBlue text-white px-6 py-2 rounded-full font-bold uppercase text-sm tracking-wide shadow-md inline-flex items-center">
+          <i class="fas fa-scale-balanced mr-2"></i> Panorama Regulatório
+        </span>
+      </div>
+
+      <div class="max-w-4xl mx-auto mb-10 text-gray-700 leading-relaxed">
+        <p class="mb-4 text-base">
+          A Inteligência Artificial tem impactos diretos na economia, na sociedade e na vida das pessoas. Por isso, além de inovação, o tema exige
+          <strong class="text-piBlue">uso responsável</strong>, <strong class="text-piBlue">transparência</strong> e <strong class="text-piBlue">governança</strong>.
+        </p>
+        <p class="text-base">
+          No Brasil, o panorama regulatório envolve políticas públicas, princípios éticos e iniciativas de coordenação com referências internacionais,
+          além do avanço de propostas legislativas para classificação de riscos e proteção de direitos fundamentais.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-piGreen hover:shadow-md transition-shadow">
+          <div class="text-4xl text-piGreen mb-4"><i class="fas fa-bullseye"></i></div>
+          <h3 class="font-display font-bold text-lg text-piBlue mb-2">Necessidade de Regulação</h3>
+          <p class="text-sm text-gray-600">Marcos regulatórios ajudam a maximizar benefícios e reduzir danos, com foco no cidadão.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-piYellow hover:shadow-md transition-shadow">
+          <div class="text-4xl text-piYellow mb-4"><i class="fas fa-people-arrows"></i></div>
+          <h3 class="font-display font-bold text-lg text-piBlue mb-2">Coordenação Internacional</h3>
+          <p class="text-sm text-gray-600">A evolução tecnológica é rápida; alinhar princípios globais melhora consistência e confiança.</p>
+        </div>
+      </div>
+
+      <div class="bg-piGray rounded-xl p-8 border-t-4 border-piGreen relative overflow-hidden mb-10">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-piGreen opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+        <h3 class="font-display font-bold text-2xl text-piGreen mb-4 flex items-center relative z-10">
+          <i class="fas fa-landmark mr-3"></i> Estratégia Brasileira de IA (EBIA)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative z-10">
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <p class="text-sm text-gray-600">Instituída por Portaria do MCTI, organiza eixos temáticos para orientar ações estratégicas no país.</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <p class="text-sm text-gray-600">Fortalece pesquisa, desenvolvimento e inovação, estimulando adoção no ambiente produtivo e social.</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <p class="text-sm text-gray-600">Promove uso consciente e ético para que a IA gere valor público e benefícios à sociedade.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-piGreen/30 transition-colors">
+          <h3 class="font-display font-bold text-lg text-piBlue mb-3 flex items-center">
+            <span class="bg-piYellow text-piBlue w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm shadow-sm">1</span>
+            Princípios Éticos
+          </h3>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li><strong class="text-piBlue">Responsabilidade</strong> e prestação de contas</li>
+            <li><strong class="text-piBlue">Transparência</strong> nas decisões e processos</li>
+            <li><strong class="text-piBlue">Direitos Humanos</strong> e dignidade</li>
+            <li><strong class="text-piBlue">Não discriminação</strong>, equidade e inclusão</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-piGreen/30 transition-colors">
+          <h3 class="font-display font-bold text-lg text-piBlue mb-3 flex items-center">
+            <span class="bg-piYellow text-piBlue w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm shadow-sm">2</span>
+            Autoavaliação no Setor Público
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            O Framework para Autoavaliação de Impacto Ético (Governo Digital – Núcleo de IA) é um instrumento orientador para apoiar órgãos da
+            administração pública federal na adoção responsável de IA.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-piGreen/30 transition-colors">
+          <h3 class="font-display font-bold text-lg text-piBlue mb-3 flex items-center">
+            <span class="bg-piYellow text-piBlue w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm shadow-sm">3</span>
+            Referência Global (UNESCO)
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            A Recomendação sobre a Ética da IA (UNESCO) é um instrumento global aprovado em 2021, com escopo internacional e versão em português,
+            ajudando a alinhar debates e princípios.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-piBlue mb-10">
+        <h3 class="font-display font-bold text-2xl text-piBlue mb-4 flex items-center">
+          <i class="fas fa-gavel mr-3 text-piYellow"></i> Projeto de Lei 2338/23 (Regulamentação da IA)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-piGray rounded-xl p-6">
+            <h4 class="font-display font-bold text-lg text-piBlue mb-2">Status</h4>
+            <p class="text-sm text-gray-700">Aprovado pelo Senado e em tramitação na Câmara dos Deputados.</p>
+          </div>
+          <div class="bg-piGray rounded-xl p-6">
+            <h4 class="font-display font-bold text-lg text-piBlue mb-2">Enfoque</h4>
+            <p class="text-sm text-gray-700">Classificação por níveis de risco e proteção de direitos fundamentais.</p>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <div class="text-3xl text-piGreen mb-3"><i class="fas fa-triangle-exclamation"></i></div>
+            <h4 class="font-display font-bold text-base text-piBlue mb-1">Risco</h4>
+            <p class="text-sm text-gray-600">Avaliação do impacto sobre vida e direitos.</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <div class="text-3xl text-piYellow mb-3"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h4 class="font-display font-bold text-base text-piBlue mb-1">IA Generativa</h4>
+            <p class="text-sm text-gray-600">Atenção especial a modelos gerativos.</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-piBlue/5">
+            <div class="text-3xl text-piBlue mb-3"><i class="fas fa-copyright"></i></div>
+            <h4 class="font-display font-bold text-base text-piBlue mb-1">Direitos Autorais</h4>
+            <p class="text-sm text-gray-600">Regras para uso de conteúdos e responsabilidade.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+        <h3 class="font-display font-bold text-2xl text-piGreen mb-4 flex items-center">
+          <i class="fas fa-link mr-3 text-piYellow"></i> Documentos Oficiais
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://antigo.mctic.gov.br/mctic/opencms/legislacao/portarias/Portaria_MCTI_n_4617_de_06042021.html" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">Portaria MCTI nº 4.617/2021</p>
+            <p class="text-sm text-gray-600 mt-1">Institui a EBIA e seus eixos temáticos.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/ebia.pdf" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">EBIA (PDF)</p>
+            <p class="text-sm text-gray-600 mt-1">Documento completo da Estratégia Brasileira de IA.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2024/07/plano-brasileiro-de-ia-tera-supercomputador-e-investimento-de-r-23-bilhoes-em-quatro-anos/ia_para_o_bem_de_todos.pdf/view" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">PBIA 2024–2028 (PDF)</p>
+            <p class="text-sm text-gray-600 mt-1">Plano Brasileiro de IA e investimentos.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/framework-para-a-autoavaliacao-de-impacto-etico-em-inteligencia-artificial-no-setor-publico-federal" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">Framework de Autoavaliação</p>
+            <p class="text-sm text-gray-600 mt-1">Impacto ético em IA no setor público federal.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.unesco.org/pt/fieldoffice/brasilia/expertise/artificial-intelligence-brazil" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">UNESCO — Ética da IA</p>
+            <p class="text-sm text-gray-600 mt-1">Recomendação global aprovada em 2021.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">PL 2338/23 — Tramitação</p>
+            <p class="text-sm text-gray-600 mt-1">Acompanhe o andamento na Câmara.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://atos.cnj.jus.br/files/original191707202008255f4563b35f8e8.pdf" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">CNJ — Resolução sobre uso de IA</p>
+            <p class="text-sm text-gray-600 mt-1">Normas para regulamentar o uso de IA no Judiciário.</p>
+          </a>
+          <a class="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-piGreen/30 transition-colors" href="https://www.tse.jus.br/legislacao/compilada/res/2024/resolucao-no-23-732-de-27-de-fevereiro-de-2024" target="_blank" rel="noopener noreferrer">
+            <p class="font-bold text-piBlue">TSE — Resolução nº 23.732/2024</p>
+            <p class="text-sm text-gray-600 mt-1">Regras e diretrizes eleitorais relacionadas ao uso de IA.</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-piGreen text-white py-8 text-center border-t-8 border-piYellow relative">
+      <div class="container mx-auto px-4">
+        <p class="font-display font-bold text-lg italic mb-4">"Dados, inovação e inteligência para transformar o Piauí."</p>
+        <div class="flex justify-center items-center gap-2 text-sm opacity-80">
+          <span>Governo do Estado do Piauí</span>
+          <span>&bull;</span>
+          <span>2026</span>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <img src="/assets/capacitia-logo.png" alt="Capacitia" class="h-20 opacity-80 hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+    </footer>
+
+    <nav class="fixed bottom-6 right-6 flex items-center gap-2 z-50">
+      <a href="/infografico/15" class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a href="/roadmap" class="bg-piBlue text-white w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-piGreen hover:scale-110 transition-all duration-300" aria-label="Finalizar">
+        <i class="fas fa-check"></i>
+      </a>
+    </nav>
+  </div>
+
+  <script>
+    const btn=document.getElementById('hc-toggle');if(btn){btn.addEventListener('click',()=>{const a=document.body.classList.toggle('hc');btn.setAttribute('aria-pressed',String(a));});}
+  </script>
+</body>
+</html>
